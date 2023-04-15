@@ -5,7 +5,6 @@ class ExampleGroovy {
     static void groovyMethod(int[] arr) {
         def map = [:]
         def count
-        def test = 0
         arr.each { int i ->
             if (map.get(i) == null) {
                 count = 0
@@ -15,7 +14,6 @@ class ExampleGroovy {
                     }
                 }
                 map.put(i, count)
-                println(test++)
             }
         }
         println("Groovy: " + map)

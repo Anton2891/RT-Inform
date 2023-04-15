@@ -8,7 +8,6 @@ public class ExampleJava {
     static void javaMethod(int[] arr) {
         Map<String, Integer> map = new LinkedHashMap<>();
         int count;
-        int test = 0;
         for (int i : arr) {
             if (!map.containsKey(String.valueOf(i))) {
                 count = 0;
@@ -18,7 +17,6 @@ public class ExampleJava {
                     }
                 }
                 map.put(String.valueOf(i), count);
-                System.out.println(test++);
             }
         }
         System.out.println("Java: " + map);
